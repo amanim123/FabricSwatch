@@ -1,0 +1,136 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    /* background-color: black; */
+
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+img {
+	position:absolute; margin-top: 18cm;
+	
+}
+
+#container {
+    display: grid;
+   
+}
+
+.center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	position: absolute; top: 50%; left: 50%; 
+	transform: translate(-50%, -50%);
+}
+
+
+.type{
+	position: absolute; top: 50%; left: 50%; 
+	transform: translate(-50%, -50%);
+	background-color: transparent;
+}
+
+.container {
+	position: relative;
+	text-align: center;
+  }
+.textcentered {
+	position: fixed;
+	top: 93%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: transparent;
+}
+h1{
+	font-size: 250px;
+    color: white;
+    text-align: center;
+    padding-top: 1cm;
+    padding-bottom: 0.5cm;
+    font-family: "eckmannpsych-large", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	background-color: transparent;
+}
+
+.image-grid {
+	display: grid;
+	place-items: center;
+	width: 700px;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 1em;
+	grid-auto-rows: minmax(200px, auto);
+	text-align: center;
+    margin: auto;
+	padding-left: 1cm;
+	padding-right: 6cm;
+    padding-top: 4cm;
+    justify-content: center;
+  }
+
+
+.grid-br{
+	background-color: transparent;
+}
+
+  .image-grid img {
+    width: 200px;
+    height: 200px;
+	filter: grayscale(1);
+    content:centered;
+  }
+
+.image-grid img:hover
+{
+	filter:grayscale(0);
+}
+
+
